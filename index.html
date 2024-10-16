@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/scripts/main.js"></script>
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header-main">
+        <div class="container">
+            <div class="header-info">
+                <img src="/img/logo.png" alt="" class="header-logo">
+                <div class="header-text">
+                    <h1>ДЕНИТА</h1>
+                    <h2>Электромонтажная компания</h2>
+                </div>
+
+                <div class="header-about">
+                    <div class="header-contact">
+                        <a href="tel:+79122487207"><img src="/img/tel.png" alt="" width="16"> +7 (912) 24-87-207</a>
+                        <a href="mailto:ooodenita@mail.ru"><img src="/img/mail.png" alt="" width="16"> ooodenita@mail.ru</a>
+                    </div>
+                    <h1>Профессиональные решения в <br>электромонтаже от компании ДЕНИТА</h1>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-main">
+        <div class="container">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#part1" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#part2" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#part3" class="menu__link">Лицензия/Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#part4" class="menu__link">Карточка учета</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+
+    <main class="main-main">
+        <div class="container">
+            <div class="about-main" id="part1">
+                <h1>О компании</h1>
+                <p>Компания ДЕНИТА — это надежный и опытный партнер в сфере электромонтажных работ. Мы предоставляем полный комплекс услуг по проектированию, монтажу и техническому обслуживанию электрических систем любой сложности. Наша команда высококвалифицированных специалистов гарантирует высокое качество выполнения работ и строгое соблюдение сроков. Мы используем передовые технологии и материалы, чтобы обеспечить безопасность и долговечность ваших электрических систем. С нами вы можете быть уверены, что все этапы работ, от проектирования до финальной сдачи объекта, будут выполнены на высшем уровне.</е>
+            </div>
+
+            
+
+            <div class="uslugi" id="part2">
+                <p>Мы готовы взять на себя функции субподрядчика на крупных строительных объектах для проведения электромонтажных работ, таких как:</p>
+                <ul>
+                    <li>Монтаж электрических сетей.</li>
+                    <li>Установка систем освещения и оборудования.</li>
+                    <li>Прокладка кабельных трасс.</li>
+                    <li>Монтаж распределительных щитов.</li>
+                    <li>Подключение систем безопасности.</li>
+                </ul>
+            </div>
+
+            <div class="licenses-section" id="part3">
+                <div class="licenses-text">
+                    <p>Компания «ДЕНИТА» имеет все необходимые лицензии для выполнения вышеперечисленных работ, включая лицензию на осуществление деятельности по монтажу, техническому обслуживанию и ремонту средств обеспечения пожарной безопасности зданий и сооружений. </p>
+                </div>
+                
+                <div class="licenses-gallery">
+                    <img src="/img/license1.jpg" alt="Лицензия 1" class="license-photo" onclick="openModal(0)">
+                    <img src="/img/license2.jpg" alt="Продолжение лицензии" class="license-photo" onclick="openModal(1)">
+                    <img src="/img/license3.jpg" alt="Свидетельство" class="license-photo" onclick="openModal(2)">
+                    <img src="/img/license4.jpg" alt="Благодарственное письмо" class="license-photo" onclick="openModal(3)">
+                </div>
+            </div>
+            
+            <!-- Модальное окно -->
+            <div id="modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+            <div class="together-main" id="part4">
+                <h1>Надежное партнёрство для успешного проекта</h1>
+                <p>Сотрудничая с нашей компанией в качестве подрядчика, вы обретете надежного и опытного партнера. Мы ценим качество и ответственность в работе, гарантируя своевременное выполнение всех задач на высоком уровне. Наша команда специалистов с глубоким знанием отрасли готова взять на себя проект любой сложности, обеспечивая полный цикл электромонтажных работ – от проектирования до окончательной сдачи объекта. Мы придерживаемся строгих стандартов безопасности и применяем передовые технологии, что позволяет нам предлагать эффективные и долговечные решения. С нами вы можете быть уверены в профессионализме и надежности каждого этапа сотрудничества.</p>
+            </div>
+
+            <div class="organization-info" id="#part4">
+                <h1>Карточка учета основных сведений</h1>
+                <table border="1" cellpadding="10" cellspacing="0" class="info-table">
+                    <tr>
+                        <td><strong>Директор, действующий на основании Устава</strong></td>
+                        <td>Павлецов Денис Викторович</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Полное наименование организации</strong></td>
+                        <td>Общество с ограниченной ответственностью "ДЕНИТА"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Сокращенное наименование организации</strong></td>
+                        <td>ООО "ДЕНИТА"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Юридический адрес</strong></td>
+                        <td>РФ, 622052, Свердловская обл., г. Нижний Тагил, ул. Зари, д. 9, кв.29</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Фактический (почтовый) адрес</strong></td>
+                        <td>РФ, 622052, Свердловская обл., г. Нижний Тагил, ул. Зари, д. 9, кв.29</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Телефон</strong></td>
+                        <td>8 (912) 24-87-207</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Адрес электронной почты</strong></td>
+                        <td><a href="mailto:ooodenita@mail.ru">ooodenita@mail.ru</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>ОГРН</strong></td>
+                        <td>1196658057276</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ИНН/КПП</strong></td>
+                        <td>6623131852/662301001</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Расчетный счет</strong></td>
+                        <td>40702810216540139413</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Корр. счет</strong></td>
+                        <td>30101810500000000674</td>
+                    </tr>
+                    <tr>
+                        <td><strong>БИК банка</strong></td>
+                        <td>046577674</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Банк</strong></td>
+                        <td>УРАЛЬСКИЙ БАНК ПАО СБЕРБАНК, ИНН 7707083893, г. Нижний Тагил, ул. Ломоносова, 49</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Классификаторы в статистическом регистре</strong></td>
+                        <td>ОКПО 67688804;<br>ОКАТО 65476370000;<br>ОКТМО 65751000001;<br>ОКОГУ 4210014;<br>ОКФС 16;<br>ОКОПФ 12300;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Директор</strong></td>
+                        <td>Павлецов Денис Викторович, действует на основании Устава</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Главный бухгалтер</strong></td>
+                        <td>В штате отсутствует</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer_main">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer_about">
+                    <h1>ОГРН 1196658057276, ИНН 6623131852 и КПП 66230100 "ООО ДЕНИТА"</h1>
+                    <p>Свердловская Область, г. Нижний Тагил ,ул. Юности 6, 3 этаж</p>
+                </div>
+                <div class="footer_contact">
+                    <a href="tel:+79122487207" class="header-contact"><img src="/img/tel.png" alt="" width="16"> +7 (912) 24-87-207</a>
+                    <a href="mailto:ooodenita@mail.ru" class="header-contact"><img src="/img/mail.png" alt="" width="16"> ooodenita@mail.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
