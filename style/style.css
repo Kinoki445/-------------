@@ -100,6 +100,7 @@
     flex-direction: column;
     align-items: center;
     margin: 30px 0;
+    gap: 20px;
 }
 
 .licenses-text {
@@ -277,6 +278,63 @@
     margin-bottom: 10px;
 }
 
+.clients-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.clients-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.client {
+    width: 300px; /* Фиксированная ширина для выравнивания */
+    margin: 15px;
+    text-align: center;
+}
+
+.client-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Закругление углов */
+    transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+    transform: scale(1.1); /* Анимация увеличения при наведении */
+}
+
+.client p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.about-section{
+    margin-top: 20px;
+}
+
+.partnership-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.map_iframe {
+    width: 960px; /* Ограничивает максимальную ширину */
+    height: 400px; /* Стандартная высота для больших экранов */
+    border: 1px solid #ccc;
+}
+
 /* Адаптивность */
 @media (max-width: 1250px){
     .header-info{
@@ -286,6 +344,40 @@
 
     .header-contact{
         justify-content: center;
+    }
+
+    html {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p, li, a {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.3rem;
+    }
+
+    p, li, a {
+        font-size: 0.9rem;
+    }
+
+    .map_iframe {
+        width: 500px; /* Еще большее уменьшение высоты для маленьких экранов */
     }
 }
 
@@ -323,6 +415,40 @@
 
     .uslugi p, .uslugi li {
         font-size: 0.9rem;
+    }
+
+    .map_iframe {
+        width: 300px; /* Уменьшение высоты карты для средних экранов */
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 0.75rem;
+    }
+
+    p, li, a {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 0.5rem;
+    }
+
+    h2 {
+        font-size: 0.1rem;
+    }
+
+    p, li, a {
+        font-size: 0.8rem;
     }
 }
 
@@ -362,73 +488,11 @@
     .info-table td {
         font-size: 0.85rem; /* Уменьшение шрифта на малых экранах */
     }
-}
 
-@media (max-width: 1200px) {
-    html {
-        font-size: 15px;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    p, li, a {
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 992px) {
-    html {
-        font-size: 14px;
+    .map_iframe {
+        height: 200px; /* Еще большее уменьшение высоты для маленьких экранов */
     }
 
-    h1 {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 0.3rem;
-    }
-
-    p, li, a {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 13px;
-    }
-
-    h1 {
-        font-size: 0.75rem;
-    }
-
-    p, li, a {
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 576px) {
-    html {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 0.5rem;
-    }
-
-    h2 {
-        font-size: 0.1rem;
-    }
-
-    p, li, a {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
     html {
         font-size: 11px;
     }
