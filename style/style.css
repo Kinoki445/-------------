@@ -42,7 +42,7 @@
     width: 120px;
 }
 
-.header-contact {
+.header-contact, .header-contact a{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -73,6 +73,12 @@
     padding: 0 10px;
 }
 
+.menu__item{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
 .menu__item a:hover, .footer_contact a:hover, .header-contact a:hover {
     color: #e67e22; /* Более светлый оттенок оранжевого при наведении */
 }
@@ -84,12 +90,12 @@
     margin: 20px 0;
 }
 
-.about-main h1, .together-main h1, .organization-info h1 {
+.about-main h1, .together-main h1, .organization-info h1, .clients-section h1, .partnership-section h1, .licenses-section h1{
     font-size: 2rem;
     color: #2c3e50; /* Темный синий для заголовка */
 }
 
-.about-main p, .together-main p {
+.about-main p, .together-main p, .licenses-section p, .partnership-section p, .clients-section p{
     font-size: 1rem;
     line-height: 1.6;
     color: #555; /* Серый для основного текста */
@@ -270,12 +276,19 @@
     flex-wrap: wrap;
 }
 
-.footer_contact {
+.footer_contact{
     display: flex;
     flex-direction: column;
     color: #f39c12;
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+.footer_contact a{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 
 .clients-section {
