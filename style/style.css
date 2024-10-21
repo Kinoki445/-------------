@@ -251,9 +251,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    justify-content: space-between; /* Распределение места между картинкой и текстом */
+    height: 300px; /* Установи общую высоту для блока */
+    width: 300px;
     text-align: center;
 }
+
+.uslugi2-item p {
+    min-height: 60px; /* Настрой значение в зависимости от текста */
+    margin-top: 10px;
+}
+
 
 .uslugi2-img {
     width: 100%;
